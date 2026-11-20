@@ -1,6 +1,6 @@
 export function floorName(value) {
   const text = String(value ?? '').normalize('NFKC').trim().toUpperCase();
-  const basement = text.match(/(?:지하\s*|B\s*)(\d+)/);
+  const basement = text.match(/지하\s*(\d+)/) || text.match(/(?:^|[^A-Z0-9])B\s*(\d+)(?:F|층)?(?=$|[\s()[\],])/);
   if (basement) return `B${Number(basement[1])}`;
   const above = text.match(/(?:지상\s*)?(\d+)\s*(?:F|층)/) || text.match(/^(\d+)$/);
   return above ? `${Number(above[1])}F` : null;
@@ -23,7 +23,7 @@ export function countDevices(site, floorId) {
 }
 
 export function createEmptySite(name) {
-  return { version: 1, id: crypto.randomUUID(), name: String(name).trim() || '새 현장', buildings: [], floors: [], devices: [], sources: [], warnings: [] };
+  return { version: 1, matchingVersion: 2, id: crypto.randomUUID(), name: String(name).trim() || '새 현장', buildings: [], floors: [], spaces: [], matchingRules: [], devices: [], sources: [], warnings: [] };
 }
 
 export function imageIsAllowed(value) {
@@ -49,6 +49,7 @@ export function validateSite(input) {
   for (const floor of input.floors) {
     if (!buildings.has(floor.buildingId) || !Number.isFinite(floor.order) || !imageIsAllowed(floor.image)) throw new Error('층의 건물·순서·안내도 정보가 잘못되었습니다.');
     if (floor.imageNote != null && typeof floor.imageNote !== 'string') throw new Error('층 안내 문구 형식이 잘못되었습니다.');
+    if (floor.planKey != null && !/^[a-f0-9]{64}$/.test(floor.planKey)) throw new Error('안내도 이미지 식별 정보가 잘못되었습니다.');
   }
   for (const device of input.devices) {
     for (const key of ['location', 'kind', 'ip', 'switch', 'port', 'subnet', 'gateway', 'dns', 'notes', 'photoMatch', 'sourceSheet']) {
@@ -68,8 +69,12 @@ export function validateSite(input) {
       if (!space.position || ![space.position.x,space.position.y].every(n=>Number.isFinite(n)&&n>=0&&n<=1)) throw new Error('장소 좌표가 잘못되었습니다.');
       if (space.aliases != null && (!Array.isArray(space.aliases) || !space.aliases.every(a=>typeof a==='string'))) throw new Error('장소 별칭 형식이 잘못되었습니다.');
       if (space.bounds && !['x','y','width','height'].every(k=>Number.isFinite(space.bounds[k])&&space.bounds[k]>=0&&space.bounds[k]<=1)) throw new Error('장소 영역 형식이 잘못되었습니다.');
+      if (space.bounds && (space.bounds.x+space.bounds.width>1.00001 || space.bounds.y+space.bounds.height>1.00001)) throw new Error('장소 영역이 안내도 밖에 있습니다.');
+      if (space.geometryVersion === 2 && !/^[a-f0-9]{64}$/.test(space.planKey || '')) throw new Error('장소와 원본 안내도의 연결 정보가 없습니다.');
+      if (space.roomNumber != null && typeof space.roomNumber !== 'string') throw new Error('방 번호는 문자열이어야 합니다.');
     }
   }
+  if (input.matchingRules != null && (!Array.isArray(input.matchingRules) || input.matchingRules.length>20000 || !input.matchingRules.every(r=>r&&typeof r.inputLabel==='string'&&typeof r.spaceId==='string'&&floors.has(r.floorId)&&/^[a-f0-9]{64}$/.test(r.planKey||'')))) throw new Error('현장 매칭 규칙 형식이 잘못되었습니다.');
   if (input.warnings != null && (!Array.isArray(input.warnings) || !input.warnings.every(w => typeof w === 'string'))) throw new Error('현장 안내 문구 형식이 잘못되었습니다.');
   if (input.sources != null && (!Array.isArray(input.sources) || !input.sources.every(s => s && typeof s.name === 'string' && (s.url == null || (typeof s.url === 'string' && /^https:\/\//.test(s.url)))))) throw new Error('출처 정보 형식이 잘못되었습니다.');
   return structuredClone(input);

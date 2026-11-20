@@ -184,7 +184,8 @@
         "text": "외래약국"
       }
     ],
-    "width": 820
+    "width": 820,
+    "planKey": "500b0db7d2546f88f1bbc56f6514b4b6fd7a244a82943f70855ca7724cf5cf32"
   },
   {
     "floorId": "A01002",
@@ -291,7 +292,8 @@
         "text": "장기이식센터"
       }
     ],
-    "width": 820
+    "width": 820,
+    "planKey": "e87dae55d85b79ce3504b7c115e05ea6fa52457b7e6b6f4ffeb9bc0e6ee91c56"
   },
   {
     "floorId": "A01003",
@@ -398,7 +400,8 @@
         "text": "주차당"
       }
     ],
-    "width": 820
+    "width": 820,
+    "planKey": "af871f2118d605bec24535d08b3c783347f51d181c2d89ec77ee2f4dec036d98"
   },
   {
     "floorId": "A01004",
@@ -735,7 +738,8 @@
         "text": "선천성질환센터"
       }
     ],
-    "width": 820
+    "width": 820,
+    "planKey": "a26f5e44a5a3a99594f7e7b45a84f7f43027825c351be6b113269be5dee79eb7"
   },
   {
     "floorId": "A01005",
@@ -862,7 +866,8 @@
         "text": "VC센터"
       }
     ],
-    "width": 820
+    "width": 820,
+    "planKey": "4545a39713c12cdfce98a75cd0c514a2eca3d15335b5b4120006b9d013608fe1"
   },
   {
     "floorId": "A01006",
@@ -979,7 +984,8 @@
         "text": "심혈관촬영실"
       }
     ],
-    "width": 820
+    "width": 820,
+    "planKey": "771a72905abca7e96742e3114243bf555bd09993c2b7529ad90eca3ca67652b7"
   },
   {
     "floorId": "A13001",
@@ -1286,7 +1292,8 @@
         "text": "구"
       }
     ],
-    "width": 820
+    "width": 820,
+    "planKey": "0c8967fbe65519691d0816f4cdd5f043d7ec6127adcd56d5629d36bfeb6aa586"
   },
   {
     "floorId": "A13002",
@@ -1573,7 +1580,8 @@
         "text": "서울성모병원 사무실"
       }
     ],
-    "width": 820
+    "width": 820,
+    "planKey": "44612514a2fed353e408d43f45646a8e0dfcbcfbf1a057947694261c4959c6da"
   },
   {
     "floorId": "A13003",
@@ -1680,6 +1688,7 @@
         "text": "금연센터"
       }
     ],
-    "width": 820
+    "width": 820,
+    "planKey": "e71223939442a18ae1e78dc68f05ba7d82acd14e3b3fa5b6ce5dea65e7b795a2"
   }
 ]

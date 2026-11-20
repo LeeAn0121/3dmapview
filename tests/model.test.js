@@ -15,6 +15,13 @@ test('normalizes Korean and mixed floor labels without guessing unknown center',
   for (const [input,expected] of [['본관 B1 (3대)','B1'],['별관 지하 2층','B2'],['별관 2층 (2대)','2F'],['1f','1F'],['3','3F'],['감마나이프센터 (1대)',null]]) assert.equal(floorName(input),expected);
   assert.equal(matchFloor(site(),'별관','1층').id,'annex-1f');
   assert.equal(matchFloor(site(),'감마나이프센터','1층'),null);
+  assert.equal(floorName('LAB2 1F'),'1F');assert.equal(floorName('B2동 1층'),'1F');
+});
+
+test('building identifiers containing B2 are not treated as basement floors',async()=>{
+ const inspection={sheets:[{name:'목록',rows:[['건물','층','단말'],['LAB2','1F','장비1'],['B2동','2층','장비2']]}]};
+ const result=await importSheet({inspection,sheetName:'목록',headerRow:1,mapping:{building:0,floor:1,name:2}},createEmptySite('다른 병원'));
+ assert.deepEqual(result.buildings.map(b=>b.name),['LAB2','B2동']);assert.deepEqual(result.floors.map(f=>f.name),['1F','2F']);
 });
 
 test('rejects broken floor references and fabricated out-of-bounds positions', () => {

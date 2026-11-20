@@ -1,4 +1,9 @@
 import { floorName, floorOrder } from './model.js';
+import { normalizePlaceName } from './autoMap.js';
+function buildingLabel(value) {
+  return String(value||'').replace(/\([^)]*\)/g,'').replace(/지하\s*\d+\s*층?/g,'')
+    .replace(/(^|[^A-Z0-9])B\s*\d+(?:F|층)?(?=$|[\s()[\],])/gi,'$1').replace(/(?:지상\s*)?\d+\s*(?:F|층)/gi,'').trim();
+}
 
 function cellText(cell) {
   const value = cell?.value;
@@ -48,12 +53,12 @@ export async function importSheet({ inspection, sheetName, headerRow, mapping },
     const floorLabel = floorName(lastFloor) || floorName(lastBuilding);
     let building = buildings.find(b => b.name === lastBuilding) || [...buildings].sort((a,b) => b.name.length-a.name.length).find(b => lastBuilding.includes(b.name));
     if (!building && lastBuilding) {
-      const buildingLabel = lastBuilding.replace(/\([^)]*\)/g, '').replace(/(?:지하\s*|B\s*)\d+|(?:지상\s*)?\d+\s*(?:F|층)/gi, '').trim();
-      if (buildingLabel && (mapping.building !== mapping.floor || floorLabel)) {
-        building = { id: crypto.randomUUID(), name: buildingLabel }; buildings.push(building);
+      const label = buildingLabel(lastBuilding);
+      if (label && (mapping.building !== mapping.floor || floorLabel)) {
+        building = { id: crypto.randomUUID(), name: label }; buildings.push(building);
       }
     }
-    if (!building && buildings.length === 1 && (!lastBuilding || (floorLabel && !lastBuilding.replace(/\([^)]*\)/g, '').replace(/(?:지하\s*|B\s*)\d+|(?:지상\s*)?\d+\s*(?:F|층)/gi, '').trim()))) building = buildings[0];
+    if (!building && buildings.length === 1 && (!lastBuilding || (floorLabel && !buildingLabel(lastBuilding)))) building = buildings[0];
     let floor = building && floorLabel ? floors.find(f => f.buildingId === building.id && f.name === floorLabel) : null;
     if (!floor && building && floorLabel) {
       floor = { id: crypto.randomUUID(), buildingId: building.id, name: floorLabel, order: floorOrder(floorLabel), image: null };
@@ -62,14 +67,16 @@ export async function importSheet({ inspection, sheetName, headerRow, mapping },
     const oldMatches = site.devices.filter(d => d.name === name && !consumed.has(d.id));
     const old = oldMatches.length === 1 ? oldMatches[0] : null;
     if (old) consumed.add(old.id);
+    const sameInstallation=old?.floorId===floor?.id&&normalizePlaceName(old?.location)===normalizePlaceName(location);
     devices.push({ ...(old || {}), id: old?.id || crypto.randomUUID(), name, location, kind: read('kind') || old?.kind || '셋톱박스',
       buildingId: building?.id || null, floorId: floor?.id || null,
       ip: read('ip'), switch: read('switch'), port: read('port'),
-      position: old?.floorId === floor?.id ? old?.position || null : null,
-      positionSource: old?.floorId === floor?.id ? old?.positionSource || null : null,
-      spaceId: old?.floorId === floor?.id ? old?.spaceId || null : null,
-      match: old?.floorId === floor?.id ? old?.match || null : null,
-      photos: old?.photos || [], notes: old?.notes || '', sourceSheet: sheetName, sourceRow: i + 1 });
+      position: sameInstallation ? old?.position || null : null,
+      positionSource: sameInstallation ? old?.positionSource || null : null,
+      spaceId: sameInstallation ? old?.spaceId || null : null,
+      match: sameInstallation ? old?.match || null : null,
+      confirmedSpace: sameInstallation ? old?.confirmedSpace || null : null,
+      photos: sameInstallation ? old?.photos || [] : [], notes: sameInstallation ? old?.notes || '' : '', sourceSheet: sheetName, sourceRow: i + 1 });
   }
   if (!devices.length) throw new Error('가져올 단말이 없습니다. 헤더 행과 열 연결을 확인해 주세요.');
   const names = new Map(); devices.forEach(d => names.set(d.name, (names.get(d.name) || 0) + 1));
@@ -77,6 +84,6 @@ export async function importSheet({ inspection, sheetName, headerRow, mapping },
   if (duplicates) warnings.push(`중복 단말명이 ${duplicates}종 있습니다. 별도 항목으로 가져왔습니다.`);
   const unassigned = devices.filter(d => !d.floorId).length;
   if (unassigned) warnings.push(`${unassigned}대의 건물·층을 확인해 주세요.`);
-  warnings.push('선택한 시트의 목록으로 교체했습니다. 같은 단말명의 사진과 동일 층 위치는 유지됩니다.');
+  warnings.push('선택한 시트의 목록으로 교체했습니다. 단말명·층·설치 장소가 모두 같은 항목만 사진과 직접 위치를 유지합니다.');
   return { devices, floors, buildings, warnings };
 }

@@ -2,6 +2,7 @@
 import Foundation
 import Vision
 import ImageIO
+import CryptoKit
 
 for path in CommandLine.arguments.dropFirst() {
     do {
@@ -19,7 +20,8 @@ for path in CommandLine.arguments.dropFirst() {
             return ["text": text.string, "confidence": text.confidence,
                     "bounds": ["x": box.minX, "y": 1-box.maxY, "width": box.width, "height": box.height]]
         }
-        let output: [String: Any] = ["file": path, "width": image.width, "height": image.height, "texts": texts]
+        let planKey = SHA256.hash(data: try Data(contentsOf: url)).map { String(format: "%02x", $0) }.joined()
+        let output: [String: Any] = ["file": path, "planKey": planKey, "width": image.width, "height": image.height, "texts": texts]
         let data = try JSONSerialization.data(withJSONObject: output, options: [.sortedKeys])
         print(String(data: data, encoding: .utf8)!)
     } catch {
