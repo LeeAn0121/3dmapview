@@ -28,3 +28,10 @@
 @media(max-width:680px){.terminal-row>span:nth-child(2){flex-direction:column;align-items:flex-start}.review-toolbar{margin-top:2px}.candidate-actions button{font-size:13px}.view-tabs .area-add-button{font-size:13px}.canvas-topbar{align-items:flex-start}.map-legend{font-size:12px}}
 
 .overview-toggle{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:14px 24px 0;font-size:13px;color:#344b6e}.overview-toggle input{width:16px;min-height:16px;margin:0;accent-color:var(--blue)}.overview-toggle>span{font-size:12px;color:var(--muted)}.rule-warning{margin-top:-8px;margin-bottom:12px}@media(max-width:680px){.overview-toggle{margin:12px 16px 0}.overview-toggle>span{width:100%;padding-left:24px}.canvas-empty{padding:24px}}
+/* Keep terminal rows reachable when the floor navigation fills a short viewport. */
+@media(min-width:681px){
+  .sidebar{overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain}
+  .sidebar .terminal-section{flex:1 0 280px;min-height:280px}
+  .sidebar .terminal-list{flex:1 1 auto;min-height:96px}
+  .terminal-section>.section-heading,.terminal-section>.review-toolbar,.terminal-section>.search-note{flex-shrink:0}
+}
