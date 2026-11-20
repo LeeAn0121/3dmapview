@@ -1,0 +1,819 @@
+[
+  {
+    "placeCd": "A01",
+    "placeNm": "본관",
+    "depth": 1
+  },
+  {
+    "placeCd": "A01006",
+    "placeNm": "5F",
+    "parentPlaceCd": "A01",
+    "depth": 2
+  },
+  {
+    "placeCd": "A01006001",
+    "placeNm": "심혈관촬영실",
+    "parentPlaceCd": "A01006",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01006002",
+    "placeNm": "로봇수술센터",
+    "parentPlaceCd": "A01006",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01006003",
+    "placeNm": "통원수술센터",
+    "parentPlaceCd": "A01006",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005",
+    "placeNm": "4F",
+    "parentPlaceCd": "A01",
+    "depth": 2
+  },
+  {
+    "placeCd": "A01005012",
+    "placeNm": "국제진료센터",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005007",
+    "placeNm": "분자병리클리닉",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005001",
+    "placeNm": "병리과",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005002",
+    "placeNm": "비뇨의학과",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005002001",
+    "placeNm": "비뇨의학과검사실",
+    "parentPlaceCd": "A01005002",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01005002002",
+    "placeNm": "쇄석실",
+    "parentPlaceCd": "A01005002",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01005003",
+    "placeNm": "유전진단검사센터",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005008",
+    "placeNm": "성분헌혈실",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005011",
+    "placeNm": "소아심장초음파실",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005009",
+    "placeNm": "심장초음파실",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005004",
+    "placeNm": "진단검사의학과",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005005",
+    "placeNm": "치과병원",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01005006",
+    "placeNm": "평생건강증진센터",
+    "parentPlaceCd": "A01005",
+    "depth": 3,
+    "placeAlias": "건강증진의학과"
+  },
+  {
+    "placeCd": "A01005010",
+    "placeNm": "VC센터",
+    "parentPlaceCd": "A01005",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004",
+    "placeNm": "3F",
+    "parentPlaceCd": "A01",
+    "depth": 2
+  },
+  {
+    "placeCd": "A01004013",
+    "placeNm": "소화기내과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004013001",
+    "placeNm": "간섬유화 검사실",
+    "parentPlaceCd": "A01004013",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004013002",
+    "placeNm": "진단초음파실",
+    "parentPlaceCd": "A01004013",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004013003",
+    "placeNm": "간클리닉 치료실 1,2,3",
+    "parentPlaceCd": "A01004013",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004014",
+    "placeNm": "기능검사실",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004014005",
+    "placeNm": "뇌파검사실",
+    "parentPlaceCd": "A01004014",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004014003",
+    "placeNm": "폐기능검사실",
+    "parentPlaceCd": "A01004014",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004014002",
+    "placeNm": "심전도검사실",
+    "parentPlaceCd": "A01004014",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004014004",
+    "placeNm": "뇌유발전위검사실",
+    "parentPlaceCd": "A01004014",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004014001",
+    "placeNm": "특수뇌파검사실",
+    "parentPlaceCd": "A01004014",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004018",
+    "placeNm": "뇌신경센터",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004023",
+    "placeNm": "발성치료실",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004021",
+    "placeNm": "부인암센터",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004015",
+    "placeNm": "난임센터 진료검사실",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004002",
+    "placeNm": "산부인과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004002001",
+    "placeNm": "산부인과 초음파검사실",
+    "parentPlaceCd": "A01004002",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004002002",
+    "placeNm": "태아정밀 초음파",
+    "parentPlaceCd": "A01004002",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004002003",
+    "placeNm": "태동검사실",
+    "parentPlaceCd": "A01004002",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004003",
+    "placeNm": "성형외과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004004",
+    "placeNm": "소화기센터",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004004001",
+    "placeNm": "내시경검사실",
+    "parentPlaceCd": "A01004004",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004019",
+    "placeNm": "신경과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004019001",
+    "placeNm": "근전도 검사실",
+    "parentPlaceCd": "A01004019",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004019002",
+    "placeNm": "뇌혈류 초음파 검사실",
+    "parentPlaceCd": "A01004019",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004019003",
+    "placeNm": "뇌초음파 검사실",
+    "parentPlaceCd": "A01004019",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004019004",
+    "placeNm": "신경인지 기능검사실 1,2",
+    "parentPlaceCd": "A01004019",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004019005",
+    "placeNm": "자기치료실",
+    "parentPlaceCd": "A01004019",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004020",
+    "placeNm": "신경외과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004005",
+    "placeNm": "암병원",
+    "parentPlaceCd": "A01004",
+    "depth": 3,
+    "placeAlias": "암센터"
+  },
+  {
+    "placeCd": "A01004022",
+    "placeNm": "유방암센터",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004001",
+    "placeNm": "유방외과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004006",
+    "placeNm": "이비인후과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004006001",
+    "placeNm": "이비인후과검사실",
+    "parentPlaceCd": "A01004006",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004024",
+    "placeNm": "알러지검사실",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004007",
+    "placeNm": "자궁근종센터",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004008",
+    "placeNm": "정신건강의학과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004008001",
+    "placeNm": "자율신경검사실",
+    "parentPlaceCd": "A01004008",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004008002",
+    "placeNm": "임상심리검사실1",
+    "parentPlaceCd": "A01004008",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004008003",
+    "placeNm": "임상심리검사실2",
+    "parentPlaceCd": "A01004008",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004017",
+    "placeNm": "통증센터",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004017001",
+    "placeNm": "채혈검사실",
+    "parentPlaceCd": "A01004017",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004009",
+    "placeNm": "피부과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004012",
+    "placeNm": "선천성질환센터",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004010",
+    "placeNm": "호흡기내과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004010001",
+    "placeNm": "기관지경실",
+    "parentPlaceCd": "A01004010",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01004025",
+    "placeNm": "알레르기내과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004011",
+    "placeNm": "심장혈관흉부외과",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004016",
+    "placeNm": "혈액병원",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01004026",
+    "placeNm": "외래채혈실",
+    "parentPlaceCd": "A01004",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002",
+    "placeNm": "2F",
+    "parentPlaceCd": "A01",
+    "depth": 2
+  },
+  {
+    "placeCd": "A01002014",
+    "placeNm": "진정회복실",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002013",
+    "placeNm": "수술전 협진실",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002001",
+    "placeNm": "감염내과",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002008",
+    "placeNm": "정형외과",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002008001",
+    "placeNm": "정형외과 초음파실",
+    "parentPlaceCd": "A01002008",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002009",
+    "placeNm": "척추센터",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002002",
+    "placeNm": "류마티스센터",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002002001",
+    "placeNm": "류마티스센터 검사실",
+    "parentPlaceCd": "A01002002",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002012",
+    "placeNm": "류마티스내과",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002004",
+    "placeNm": "심뇌혈관병원",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002004001",
+    "placeNm": "심장기능검사실",
+    "parentPlaceCd": "A01002004",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002006",
+    "placeNm": "장기이식센터",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002005",
+    "placeNm": "영상의학과",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002005001",
+    "placeNm": "골밀도실",
+    "parentPlaceCd": "A01002005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002005002",
+    "placeNm": "MRI실",
+    "parentPlaceCd": "A01002005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002005003",
+    "placeNm": "혈관조영실",
+    "parentPlaceCd": "A01002005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002005006",
+    "placeNm": "CT실",
+    "parentPlaceCd": "A01002005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002005007",
+    "placeNm": "일반촬영실",
+    "parentPlaceCd": "A01002005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002005008",
+    "placeNm": "투시촬영실",
+    "parentPlaceCd": "A01002005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002005009",
+    "placeNm": "초음파실",
+    "parentPlaceCd": "A01002005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002005010",
+    "placeNm": "유방촬영실",
+    "parentPlaceCd": "A01002005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002005004",
+    "placeNm": "판독실",
+    "parentPlaceCd": "A01002005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002007",
+    "placeNm": "재활의학과",
+    "parentPlaceCd": "A01002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01002007001",
+    "placeNm": "근전도실1",
+    "parentPlaceCd": "A01002007",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002007002",
+    "placeNm": "근전도실2",
+    "parentPlaceCd": "A01002007",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01002007003",
+    "placeNm": "초음파실",
+    "parentPlaceCd": "A01002007",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001",
+    "placeNm": "1F",
+    "parentPlaceCd": "A01",
+    "depth": 2
+  },
+  {
+    "placeCd": "A01001004",
+    "placeNm": "가정의학과",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01001004001",
+    "placeNm": "체성분검사",
+    "parentPlaceCd": "A01001004",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001004007",
+    "placeNm": "비만치료",
+    "parentPlaceCd": "A01001004",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001004004",
+    "placeNm": "스트레스검사",
+    "parentPlaceCd": "A01001004",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001004005",
+    "placeNm": "세포영양검사",
+    "parentPlaceCd": "A01001004",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001004008",
+    "placeNm": "모발검사",
+    "parentPlaceCd": "A01001004",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001004009",
+    "placeNm": "추나요법",
+    "parentPlaceCd": "A01001004",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001005",
+    "placeNm": "내분비내과",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01001005001",
+    "placeNm": "당뇨합병증검사실",
+    "parentPlaceCd": "A01001005",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001006",
+    "placeNm": "세포치료센터",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01001012",
+    "placeNm": "소아안과",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01001012001",
+    "placeNm": "소아안과검사실",
+    "parentPlaceCd": "A01001012",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001007",
+    "placeNm": "소아청소년과",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01001008",
+    "placeNm": "신장내과",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01001003",
+    "placeNm": "안센터",
+    "parentPlaceCd": "A01001",
+    "depth": 3,
+    "placeAlias": "안과"
+  },
+  {
+    "placeCd": "A01001003001",
+    "placeNm": "안과검사실",
+    "parentPlaceCd": "A01001003",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001002",
+    "placeNm": "응급의료센터",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01001001",
+    "placeNm": "외과",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01001001001",
+    "placeNm": "외과혈류검사실",
+    "parentPlaceCd": "A01001001",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01001009",
+    "placeNm": "외래채혈실",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01001010",
+    "placeNm": "인공신장실",
+    "parentPlaceCd": "A01001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01003",
+    "placeNm": "B1",
+    "parentPlaceCd": "A01",
+    "depth": 2
+  },
+  {
+    "placeCd": "A01003001",
+    "placeNm": "방사선종양학과",
+    "parentPlaceCd": "A01003",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01003002",
+    "placeNm": "핵의학과",
+    "parentPlaceCd": "A01003",
+    "depth": 3
+  },
+  {
+    "placeCd": "A01003002001",
+    "placeNm": "감마영상검사실",
+    "parentPlaceCd": "A01003002",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01003002002",
+    "placeNm": "핵의학체외검사",
+    "parentPlaceCd": "A01003002",
+    "depth": 4
+  },
+  {
+    "placeCd": "A01003003",
+    "placeNm": "PET-CT센터",
+    "parentPlaceCd": "A01003",
+    "depth": 3
+  },
+  {
+    "placeCd": "A13",
+    "placeNm": "별관",
+    "depth": 1
+  },
+  {
+    "placeCd": "A13002",
+    "placeNm": "2F",
+    "parentPlaceCd": "A13",
+    "depth": 2
+  },
+  {
+    "placeCd": "A13002002",
+    "placeNm": "완화의학과",
+    "parentPlaceCd": "A13002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A13002003",
+    "placeNm": "호스피스완화의료센터",
+    "parentPlaceCd": "A13002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A13002001",
+    "placeNm": "직업환경의학과",
+    "parentPlaceCd": "A13002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A13002004",
+    "placeNm": "초음파실",
+    "parentPlaceCd": "A13002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A13002005",
+    "placeNm": "알레르기치료실",
+    "parentPlaceCd": "A13002",
+    "depth": 3
+  },
+  {
+    "placeCd": "A13001",
+    "placeNm": "1F",
+    "parentPlaceCd": "A13",
+    "depth": 2
+  },
+  {
+    "placeCd": "A13001001",
+    "placeNm": "통합검사실(CT실/MRI실/일반촬영실)",
+    "parentPlaceCd": "A13001",
+    "depth": 3
+  },
+  {
+    "placeCd": "A13003",
+    "placeNm": "B1",
+    "parentPlaceCd": "A13",
+    "depth": 2
+  },
+  {
+    "placeCd": "A13003001",
+    "placeNm": "온열치료실",
+    "parentPlaceCd": "A13003",
+    "depth": 3
+  }
+]
