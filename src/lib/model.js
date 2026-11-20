@@ -51,10 +51,17 @@ export function validateSite(input) {
     if (floor.imageNote != null && typeof floor.imageNote !== 'string') throw new Error('층 안내 문구 형식이 잘못되었습니다.');
     if (floor.planKey != null && !/^[a-f0-9]{64}$/.test(floor.planKey)) throw new Error('안내도 이미지 식별 정보가 잘못되었습니다.');
   }
+  const referenceIds = new Set();
   for (const device of input.devices) {
-    for (const key of ['location', 'kind', 'ip', 'switch', 'port', 'subnet', 'gateway', 'dns', 'notes', 'photoMatch', 'sourceSheet']) {
+    for (const key of ['location', 'kind', 'ip', 'switch', 'port', 'subnet', 'gateway', 'dns', 'notes', 'photoMatch', 'sourceSheet', 'referenceId', 'detail']) {
       if (device[key] != null && typeof device[key] !== 'string') throw new Error(`단말 ${key} 항목은 문자열이어야 합니다.`);
     }
+    if (device.referenceId != null) {
+      if (!device.referenceId.trim() || referenceIds.has(device.referenceId)) throw new Error('사진 ID가 비어 있거나 중복됩니다.');
+      referenceIds.add(device.referenceId);
+    }
+    if (device.referenceStatus != null && !['confirmed', 'review'].includes(device.referenceStatus)) throw new Error('사진 ID 확인 상태가 잘못되었습니다.');
+    if (device.networkStatus != null && !['confirmed', 'review'].includes(device.networkStatus)) throw new Error('IP 대조 상태가 잘못되었습니다.');
     if (device.buildingId != null && !buildings.has(device.buildingId)) throw new Error('단말의 건물 정보가 잘못되었습니다.');
     if (device.floorId != null && (!floors.has(device.floorId) || floors.get(device.floorId).buildingId !== device.buildingId)) throw new Error('단말의 건물과 층이 일치하지 않습니다.');
     if (device.position != null && (!device.floorId || !Number.isFinite(device.position.x) || !Number.isFinite(device.position.y) || device.position.x < 0 || device.position.x > 1 || device.position.y < 0 || device.position.y > 1)) throw new Error('단말 위치는 지정된 층의 0~1 좌표여야 합니다.');

@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 
 function Markers({site,floor,selectedId,onSelect}) {
   if (site.isPublicDemo) return null;
-  return site.devices.filter(d=>d.floorId===floor.id&&d.position&&d.positionSource!=='auto').map(d=><button key={d.id} className={'map-marker manual '+(selectedId===d.id?'selected':'')} style={{left:`${d.position.x*100}%`,top:`${d.position.y*100}%`,zIndex:selectedId===d.id?30:10}} aria-label={`${d.name} 설치 위치`} data-position-source="manual" onClick={e=>{e.stopPropagation();onSelect(d)}}><MapPin size={23} fill="currentColor"/><span>{d.name} · 직접 지정</span></button>);
+  return site.devices.filter(d=>d.floorId===floor.id&&d.position&&d.positionSource!=='auto').map(d=><button key={d.id} className={'map-marker manual '+(selectedId===d.id?'selected':'')} style={{left:`${d.position.x*100}%`,top:`${d.position.y*100}%`,zIndex:selectedId===d.id?30:10}} aria-label={`${d.referenceId?`ID ${d.referenceId} · `:''}${d.name} 설치 위치`} data-position-source="manual" onClick={e=>{e.stopPropagation();onSelect(d)}}><MapPin size={23} fill="currentColor"/><span>{d.referenceId?`ID ${d.referenceId} · `:''}{d.name} · 직접 지정</span></button>);
 }
 
 function Places({site,floor,selectedSpaceId,onSelectSpace,editing}) {

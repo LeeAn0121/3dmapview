@@ -86,6 +86,16 @@ npm run build
 
 `local-data/`는 Git에서 제외되고 개발 서버에서만 제공됩니다. `dist/` 빌드 결과에 병원의 내부 IP와 사진을 넣지 않습니다.
 
+사진에 적힌 ID는 엑셀 행 번호와 별도로 `referenceId`에 보관합니다. 목록·검색·상세 화면에서 `07` 또는 `ID 07`로 찾을 수 있습니다. 판독 중인 번호는 `referenceStatus: "review"`, 개별 IP를 구분하지 못한 장소는 `networkStatus: "review"`로 표시합니다.
+
+검토한 ID 목록으로 로컬 대조표와 이미지 포함 현장 JSON을 만들 수 있습니다. 입력은 `entries: [["07", ["원본 단말 ID"], "세부 위치", "사진 번호", "confirmed"]]`, `excluded`, `unresolved` 배열을 담은 JSON입니다. 동일 장소의 여러 원본 ID를 넣으면 IP를 행 순서로 배정하지 않습니다. 미설치·수량 차이와 원본 기록은 대조 자료로 보존합니다.
+
+```sh
+node scripts/reconcile-photo-ids.mjs local-data/original.json local-data/reviewed-ids.json local-data/reconciliation
+```
+
+생성된 `사진ID-재매핑-현장.json`은 웹의 **현장 관리 → 현장 불러오기**에서 엽니다. 파일은 로컬에서 읽고 해당 브라우저에 저장합니다. 사진의 장면만으로 평면도상의 설치 좌표를 추정하지 않습니다.
+
 ## GitHub Pages 배포
 
 이 저장소의 `main`은 소스, `gh-pages`는 공개 빌드 결과만 저장합니다. Pages의 게시 원본은 `gh-pages` 브랜치의 `/`입니다.

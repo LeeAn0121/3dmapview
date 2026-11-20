@@ -11,6 +11,16 @@ function site() {
   ] };
 }
 
+test('photo IDs retain leading zeros and duplicate identifiers are rejected', () => {
+  const data=site();
+  data.devices=[{id:'a',name:'A',referenceId:'01',referenceStatus:'confirmed',networkStatus:'review',detail:'로비',photos:[]}];
+  assert.equal(validateSite(data).devices[0].referenceId,'01');
+  data.devices.push({...data.devices[0],id:'b'});
+  assert.throws(()=>validateSite(data),/사진 ID/);
+  data.devices[1].referenceId='02'; data.devices[1].referenceStatus='guessed';
+  assert.throws(()=>validateSite(data),/확인 상태/);
+});
+
 test('normalizes Korean and mixed floor labels without guessing unknown center', () => {
   for (const [input,expected] of [['본관 B1 (3대)','B1'],['별관 지하 2층','B2'],['별관 2층 (2대)','2F'],['1f','1F'],['3','3F'],['감마나이프센터 (1대)',null]]) assert.equal(floorName(input),expected);
   assert.equal(matchFloor(site(),'별관','1층').id,'annex-1f');
