@@ -2,6 +2,7 @@ import { autoMapSite, isSpaceOnPlan } from './autoMap.js';
 import { fingerprintImage } from './imageAnalysis.js';
 import { hydrateSite } from './storage.js';
 import { createEmptySite } from './model.js';
+import { upgradePublicDemo } from './publication.js';
 export function assetUrl(path){return path?.startsWith('catalog/')?`${import.meta.env.BASE_URL}${path}`:path;}
 export async function loadPublicCatalog(){const response=await fetch(`${import.meta.env.BASE_URL}catalog/site.json`);if(!response.ok)throw new Error('공개 안내도를 불러오지 못했습니다.');return response.json();}
 export async function bindPlanKeys(input){
@@ -15,6 +16,7 @@ export async function bindPlanKeys(input){
  return site;
 }
 export function attachPublicSpaces(input,catalog){
+ const upgrade=upgradePublicDemo(input,catalog);if(upgrade)return upgrade;
  const site=structuredClone(input);
  // Reject every previous-version coordinate regardless of its asserted department name.
  site.spaces=(site.spaces||[]).filter(s=>isSpaceOnPlan(s,site.floors.find(f=>f.id===s.floorId)));

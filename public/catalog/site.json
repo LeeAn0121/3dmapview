@@ -3860,9 +3860,1470 @@
       "sourceUrl": "https://www.cmcseoul.or.kr/api/attach/view/lookAround/A13003001/lookAroundImage/"
     }
   ],
-  "devices": [],
+  "devices": [
+    {
+      "id": "photo-id-01",
+      "referenceId": "01",
+      "referenceStatus": "confirmed",
+      "location": "본관 1층 로비",
+      "detail": "로비",
+      "kind": "미디어월",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 01 · 본관 1층 로비 · 로비",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-02",
+      "referenceId": "02",
+      "referenceStatus": "confirmed",
+      "location": "PET-CT",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01003",
+      "installationStatus": "installed",
+      "name": "ID 02 · PET-CT",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "비슷한 이름만 찾았습니다. 후보를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01003-PETCT센터-49-690",
+            "label": "PET-CT센터",
+            "score": 0.72,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-03",
+      "referenceId": "03",
+      "referenceStatus": "confirmed",
+      "location": "핵의학과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01003",
+      "installationStatus": "installed",
+      "name": "ID 03 · 핵의학과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01003-핵의학과-88-445",
+        "label": "핵의학과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01003-핵의학과-88-445",
+            "label": "핵의학과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01003-핵의학과-88-445"
+    },
+    {
+      "id": "photo-id-04",
+      "referenceId": "04",
+      "referenceStatus": "confirmed",
+      "location": "방사선종양학과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01003",
+      "installationStatus": "installed",
+      "name": "ID 04 · 방사선종양학과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01003-방사선종양학과-61-851",
+        "label": "방사선종양학과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01003-방사선종양학과-61-851",
+            "label": "방사선종양학과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01003-방사선종양학과-61-851"
+    },
+    {
+      "id": "photo-id-05",
+      "referenceId": "05",
+      "referenceStatus": "confirmed",
+      "location": "중앙주사실",
+      "detail": "외래 주사실 (사진 손글씨)",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 05 · 중앙주사실 · 외래 주사실 (사진 손글씨)",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-06",
+      "referenceId": "06",
+      "referenceStatus": "confirmed",
+      "location": "소아안센터",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 06 · 소아안센터",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-07",
+      "referenceId": "07",
+      "referenceStatus": "confirmed",
+      "location": "안센터",
+      "detail": "로비 끝",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 07 · 안센터 · 로비 끝",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01001-안센터-827-203",
+        "label": "안센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-안센터-827-203",
+            "label": "안센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01001-안센터-827-203"
+    },
+    {
+      "id": "photo-id-08",
+      "referenceId": "08",
+      "referenceStatus": "confirmed",
+      "location": "안센터",
+      "detail": "로비 입구 · 아래 TV (위 TV X)",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 08 · 안센터 · 로비 입구 · 아래 TV (위 TV X)",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01001-안센터-827-203",
+        "label": "안센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-안센터-827-203",
+            "label": "안센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01001-안센터-827-203"
+    },
+    {
+      "id": "photo-id-09",
+      "referenceId": "09",
+      "referenceStatus": "confirmed",
+      "location": "안센터",
+      "detail": "방 번호 미확정 · 인쇄 2번방을 지운 수정 흔적",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 09 · 안센터 · 방 번호 미확정 · 인쇄 2번방을 지운 수정 흔적",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01001-안센터-827-203",
+        "label": "안센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-안센터-827-203",
+            "label": "안센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01001-안센터-827-203"
+    },
+    {
+      "id": "photo-id-10",
+      "referenceId": "10",
+      "referenceStatus": "confirmed",
+      "location": "안센터",
+      "detail": "5번방 앞",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 10 · 안센터 · 5번방 앞",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01001-안센터-827-203",
+        "label": "안센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-안센터-827-203",
+            "label": "안센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01001-안센터-827-203"
+    },
+    {
+      "id": "photo-id-11",
+      "referenceId": "11",
+      "referenceStatus": "confirmed",
+      "location": "안센터",
+      "detail": "26번방 앞",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 11 · 안센터 · 26번방 앞",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01001-안센터-827-203",
+        "label": "안센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-안센터-827-203",
+            "label": "안센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01001-안센터-827-203"
+    },
+    {
+      "id": "photo-id-12",
+      "referenceId": "12",
+      "referenceStatus": "confirmed",
+      "location": "인공신장실",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 12 · 인공신장실",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01001-인공신장실-115-415",
+        "label": "인공신장실",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-인공신장실-115-415",
+            "label": "인공신장실",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01001-인공신장실-115-415"
+    },
+    {
+      "id": "photo-id-13",
+      "referenceId": "13",
+      "referenceStatus": "confirmed",
+      "location": "외래약국",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 13 · 외래약국",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "OCR 표기는 일치하지만 인식 신뢰도가 낮습니다. 원본 글자를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-외래약국-451-909",
+            "label": "외래약국",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-14",
+      "referenceId": "14",
+      "referenceStatus": "confirmed",
+      "location": "가정의학과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 14 · 가정의학과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01001-가정의학과-195-612",
+        "label": "가정의학과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-가정의학과-195-612",
+            "label": "가정의학과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01001-가정의학과-195-612"
+    },
+    {
+      "id": "photo-id-15",
+      "referenceId": "15",
+      "referenceStatus": "confirmed",
+      "location": "신장내과 + 내분비내과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 15 · 신장내과 + 내분비내과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "설치 장소가 여러 부서로 묶여 있습니다. 실제 연결할 장소를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-내분비내과-58-630",
+            "label": "내분비내과",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          },
+          {
+            "spaceId": "ocr-A01001-신장내과-66-603",
+            "label": "신장내과",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-16",
+      "referenceId": "16",
+      "referenceStatus": "confirmed",
+      "location": "소아청소년센터",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 16 · 소아청소년센터",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "비슷한 이름만 찾았습니다. 후보를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-소아청소년과-56-888",
+            "label": "소아청소년과",
+            "score": 0.5571428571428572,
+            "reason": "문자 유사 후보 · 확인 필요"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-17",
+      "referenceId": "17",
+      "referenceStatus": "confirmed",
+      "location": "외과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 17 · 외과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01001-외과-239-888",
+        "label": "외과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-외과-239-888",
+            "label": "외과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01001-외과-239-888"
+    },
+    {
+      "id": "photo-id-18",
+      "referenceId": "18",
+      "referenceStatus": "confirmed",
+      "location": "세포치료센터",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01001",
+      "installationStatus": "installed",
+      "name": "ID 18 · 세포치료센터",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01001-세포치료센터-307-615",
+        "label": "세포치료 센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01001-세포치료센터-307-615",
+            "label": "세포치료 센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01001-세포치료센터-307-615"
+    },
+    {
+      "id": "photo-id-19",
+      "referenceId": "19",
+      "referenceStatus": "confirmed",
+      "location": "재활의학과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01002",
+      "installationStatus": "installed",
+      "name": "ID 19 · 재활의학과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01002-재활의학과-163-857",
+        "label": "재활의학과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01002-재활의학과-163-857",
+            "label": "재활의학과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01002-재활의학과-163-857"
+    },
+    {
+      "id": "photo-id-20",
+      "referenceId": "20",
+      "referenceStatus": "confirmed",
+      "location": "골밀도실",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01002",
+      "installationStatus": "installed",
+      "name": "ID 20 · 골밀도실",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-21",
+      "referenceId": "21",
+      "referenceStatus": "confirmed",
+      "location": "일반촬영실",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01002",
+      "installationStatus": "installed",
+      "name": "ID 21 · 일반촬영실",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-22",
+      "referenceId": "22",
+      "referenceStatus": "confirmed",
+      "location": "MRI+CT실",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01002",
+      "installationStatus": "installed",
+      "name": "ID 22 · MRI+CT실",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-23",
+      "referenceId": "23",
+      "referenceStatus": "confirmed",
+      "location": "초음파 + 유방촬영실",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01002",
+      "installationStatus": "installed",
+      "name": "ID 23 · 초음파 + 유방촬영실",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-24",
+      "referenceId": "24",
+      "referenceStatus": "confirmed",
+      "location": "심뇌혈관병원",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01002",
+      "installationStatus": "installed",
+      "name": "ID 24 · 심뇌혈관병원",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "OCR 표기는 일치하지만 인식 신뢰도가 낮습니다. 원본 글자를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01002-심뇌혈관병원-795-526",
+            "label": "심•뇌•혈관병원",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-25",
+      "referenceId": "25",
+      "referenceStatus": "confirmed",
+      "location": "감염내과 + 척추센터 + 정형외과 + 류마티스센터",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01002",
+      "installationStatus": "installed",
+      "name": "ID 25 · 감염내과 + 척추센터 + 정형외과 + 류마티스센터",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "설치 장소가 여러 부서로 묶여 있습니다. 실제 연결할 장소를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01002-감염내과-817-182",
+            "label": "감염내과",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          },
+          {
+            "spaceId": "ocr-A01002-류마티스센터-802-72",
+            "label": "류마티스센터",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          },
+          {
+            "spaceId": "ocr-A01002-정형외과-817-127",
+            "label": "정형외과",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          },
+          {
+            "spaceId": "ocr-A01002-척추센터-817-100",
+            "label": "척추센터",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-26",
+      "referenceId": "26",
+      "referenceStatus": "confirmed",
+      "location": "장기이식센터",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01002",
+      "installationStatus": "installed",
+      "name": "ID 26 · 장기이식센터",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01002-장기이식센터-802-879",
+        "label": "장기이식센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01002-장기이식센터-802-879",
+            "label": "장기이식센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01002-장기이식센터-802-879"
+    },
+    {
+      "id": "photo-id-27",
+      "referenceId": "27",
+      "referenceStatus": "confirmed",
+      "location": "유방암센터",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 27 · 유방암센터",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01004-유방암센터-446-842",
+        "label": "유방암센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-유방암센터-446-842",
+            "label": "유방암센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01004-유방암센터-446-842"
+    },
+    {
+      "id": "photo-id-28",
+      "referenceId": "28",
+      "referenceStatus": "confirmed",
+      "location": "성형외과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 28 · 성형외과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "OCR 표기는 일치하지만 인식 신뢰도가 낮습니다. 원본 글자를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-성형외과-793-703",
+            "label": "성형외과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-29",
+      "referenceId": "29",
+      "referenceStatus": "confirmed",
+      "location": "피부과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 29 · 피부과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "OCR 표기는 일치하지만 인식 신뢰도가 낮습니다. 원본 글자를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-피부과-800-818",
+            "label": "피부과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-30",
+      "referenceId": "30",
+      "referenceStatus": "confirmed",
+      "location": "부인암센터 + 산부인과",
+      "detail": "두 TV 중 ID 30만 판독 · 개별 IP 미확정",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 30 · 부인암센터 + 산부인과 · 두 TV 중 ID 30만 판독 · 개별 IP 미확정",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "설치 장소가 여러 부서로 묶여 있습니다. 실제 연결할 장소를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-부인암센터-810-482",
+            "label": "부인암센터",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          },
+          {
+            "spaceId": "ocr-A01004-산부인과-817-509",
+            "label": "산부인과",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-32",
+      "referenceId": "32",
+      "referenceStatus": "confirmed",
+      "location": "호흡기내과 + 알레르기내과 + 심장혈관흉부외과 + 기관지경실",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 32 · 호흡기내과 + 알레르기내과 + 심장혈관흉부외과 + 기관지경실",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "설치 장소가 여러 부서로 묶여 있습니다. 실제 연결할 장소를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-기관지경실-807-306",
+            "label": "기관지경실",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          },
+          {
+            "spaceId": "ocr-A01004-알레르기내과-802-252",
+            "label": "알레르기내과",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          },
+          {
+            "spaceId": "ocr-A01004-호흡기내과-810-224",
+            "label": "호흡기내과",
+            "score": 0.88,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-33",
+      "referenceId": "33",
+      "referenceStatus": "confirmed",
+      "location": "이비인후과",
+      "detail": "로비",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 33 · 이비인후과 · 로비",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01004-이비인후과-846-103",
+        "label": "이비인후과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-이비인후과-846-103",
+            "label": "이비인후과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01004-이비인후과-846-103"
+    },
+    {
+      "id": "photo-id-34",
+      "referenceId": "34",
+      "referenceStatus": "confirmed",
+      "location": "이비인후과",
+      "detail": "청력·평형검사실",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 34 · 이비인후과 · 청력·평형검사실",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01004-이비인후과-846-103",
+        "label": "이비인후과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-이비인후과-846-103",
+            "label": "이비인후과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01004-이비인후과-846-103"
+    },
+    {
+      "id": "photo-id-35",
+      "referenceId": "35",
+      "referenceStatus": "confirmed",
+      "location": "통증센터",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 35 · 통증센터",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01004-통증센터-478-63",
+        "label": "통증센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-통증센터-478-63",
+            "label": "통증센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01004-통증센터-478-63"
+    },
+    {
+      "id": "photo-id-36",
+      "referenceId": "36",
+      "referenceStatus": "confirmed",
+      "location": "정신건강의학과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 36 · 정신건강의학과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "OCR 표기는 일치하지만 인식 신뢰도가 낮습니다. 원본 글자를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-정신건강의학과-219-845",
+            "label": "정신건강 의학과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-37",
+      "referenceId": "37",
+      "referenceStatus": "confirmed",
+      "location": "혈액병원",
+      "detail": "사진 인쇄 1대 · 엑셀 2행 불일치",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 37 · 혈액병원 · 사진 인쇄 1대 · 엑셀 2행 불일치",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01004-혈액병원-268-103",
+        "label": "혈액병원",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-혈액병원-268-103",
+            "label": "혈액병원",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          },
+          {
+            "spaceId": "ocr-A01004-제1혈액병원주사실-39-103",
+            "label": "제1혈액병원 주사실",
+            "score": 0.72,
+            "reason": "상위 부서 또는 부분 표기 · 확인 필요"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01004-혈액병원-268-103"
+    },
+    {
+      "id": "photo-id-38",
+      "referenceId": "38",
+      "referenceStatus": "confirmed",
+      "location": "암병원",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 38 · 암병원",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01004-암병원-180-279",
+        "label": "암병원",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-암병원-180-279",
+            "label": "암병원",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01004-암병원-180-279"
+    },
+    {
+      "id": "photo-id-39",
+      "referenceId": "39",
+      "referenceStatus": "confirmed",
+      "location": "뇌신경센터",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 39 · 뇌신경센터",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "review",
+        "reason": "OCR 표기는 일치하지만 인식 신뢰도가 낮습니다. 원본 글자를 확인해 주세요.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-뇌신경센터-71-832",
+            "label": "뇌신경센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-40",
+      "referenceId": "40",
+      "referenceStatus": "confirmed",
+      "location": "소화기센터",
+      "detail": "로비",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 40 · 소화기센터 · 로비",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01004-소화기센터-71-494",
+        "label": "소화기센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-소화기센터-71-494",
+            "label": "소화기센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01004-소화기센터-71-494"
+    },
+    {
+      "id": "photo-id-41",
+      "referenceId": "41",
+      "referenceStatus": "confirmed",
+      "location": "소화기센터",
+      "detail": "내시경검사실",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01004",
+      "installationStatus": "installed",
+      "name": "ID 41 · 소화기센터 · 내시경검사실",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01004-소화기센터-71-494",
+        "label": "소화기센터",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01004-소화기센터-71-494",
+            "label": "소화기센터",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01004-소화기센터-71-494"
+    },
+    {
+      "id": "photo-id-42",
+      "referenceId": "42",
+      "referenceStatus": "confirmed",
+      "location": "보철과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01005",
+      "installationStatus": "installed",
+      "name": "ID 42 · 보철과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-43",
+      "referenceId": "43",
+      "referenceStatus": "confirmed",
+      "location": "교정과 + 보존과 + 치주과 + 구강악안면외과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01005",
+      "installationStatus": "installed",
+      "name": "ID 43 · 교정과 + 보존과 + 치주과 + 구강악안면외과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-44",
+      "referenceId": "44",
+      "referenceStatus": "confirmed",
+      "location": "비뇨의학과",
+      "detail": "로비",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01005",
+      "installationStatus": "installed",
+      "name": "ID 44 · 비뇨의학과 · 로비",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01005-비뇨의학과-71-614",
+        "label": "비뇨의학과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01005-비뇨의학과-71-614",
+            "label": "비뇨의학과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01005-비뇨의학과-71-614"
+    },
+    {
+      "id": "photo-id-45",
+      "referenceId": "45",
+      "referenceStatus": "confirmed",
+      "location": "비뇨의학과",
+      "detail": "4번 진료실 앞",
+      "kind": "셋톱박스",
+      "buildingId": "A01",
+      "floorId": "A01005",
+      "installationStatus": "installed",
+      "name": "ID 45 · 비뇨의학과 · 4번 진료실 앞",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A01005-비뇨의학과-71-614",
+        "label": "비뇨의학과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A01005-비뇨의학과-71-614",
+            "label": "비뇨의학과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A01005-비뇨의학과-71-614"
+    },
+    {
+      "id": "photo-id-46",
+      "referenceId": "46",
+      "referenceStatus": "confirmed",
+      "location": "방사선종양학과",
+      "detail": "치료실 앞",
+      "kind": "셋톱박스",
+      "buildingId": "A13",
+      "floorId": "A13003",
+      "installationStatus": "installed",
+      "name": "ID 46 · 방사선종양학과 · 치료실 앞",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-47",
+      "referenceId": "47",
+      "referenceStatus": "confirmed",
+      "location": "방사선종양학과",
+      "detail": "로비",
+      "kind": "셋톱박스",
+      "buildingId": "A13",
+      "floorId": "A13003",
+      "installationStatus": "installed",
+      "name": "ID 47 · 방사선종양학과 · 로비",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-48",
+      "referenceId": "48",
+      "referenceStatus": "confirmed",
+      "location": "영상의학과",
+      "detail": "MRI",
+      "kind": "셋톱박스",
+      "buildingId": "A13",
+      "floorId": "A13001",
+      "installationStatus": "installed",
+      "name": "ID 48 · 영상의학과 · MRI",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "unmatched",
+        "reason": "현재 안내도에 해당 명칭이 없습니다. 상세 안내도를 등록하거나 장소를 직접 확인해 주세요.",
+        "candidates": [],
+        "confidence": 0
+      },
+      "spaceId": null
+    },
+    {
+      "id": "photo-id-49",
+      "referenceId": "49",
+      "referenceStatus": "review",
+      "location": "초음파실",
+      "detail": "덧쓴 숫자 판독 필요 · 49 잠정",
+      "kind": "셋톱박스",
+      "buildingId": "A13",
+      "floorId": "A13002",
+      "installationStatus": "installed",
+      "name": "ID 49 · 초음파실 · 덧쓴 숫자 판독 필요 · 49 잠정",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A13002-초음파실-688-624",
+        "label": "초음파실",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A13002-초음파실-688-624",
+            "label": "초음파실",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A13002-초음파실-688-624"
+    },
+    {
+      "id": "photo-id-50",
+      "referenceId": "50",
+      "referenceStatus": "confirmed",
+      "location": "직업환경의학과",
+      "detail": "",
+      "kind": "셋톱박스",
+      "buildingId": "A13",
+      "floorId": "A13002",
+      "installationStatus": "installed",
+      "name": "ID 50 · 직업환경의학과",
+      "photos": [],
+      "position": null,
+      "positionSource": null,
+      "match": {
+        "status": "matched",
+        "spaceId": "ocr-A13002-직업환경의학과-454-579",
+        "label": "직업환경의학과",
+        "method": "exact-label",
+        "confidence": 1,
+        "reason": "현재 안내도에서 확인한 장소에 연결했습니다. 단말의 실제 설치 좌표를 뜻하지 않습니다.",
+        "candidates": [
+          {
+            "spaceId": "ocr-A13002-직업환경의학과-454-579",
+            "label": "직업환경의학과",
+            "score": 1,
+            "reason": "안내도 표기와 일치"
+          }
+        ]
+      },
+      "spaceId": "ocr-A13002-직업환경의학과-454-579"
+    }
+  ],
   "matchingRules": [],
-  "isPublicDemo": true,
+  "isPublicDemo": false,
   "sources": [
     {
       "name": "서울성모병원 병원둘러보기",
@@ -3871,5 +5332,32 @@
   ],
   "warnings": [
     "현재 표시하는 안내도에서 읽은 장소만 포함합니다. 세부실이 없는 안내도는 상세 이미지를 등록해 주세요."
-  ]
+  ],
+  "publishedMappingRevision": "2026-11-22T11:43:46.552Z",
+  "photoReconciliation": {
+    "warnings": [
+      "사진 기준 장소 49건: ID 확인 48건 · 번호 판독 검토 1건. 수량 검토 3개 장소 · 미설치 제외 1건. 전체 설치 대수 확정값이 아닙니다."
+    ],
+    "unresolved": [
+      {
+        "location": "부인암센터 + 산부인과",
+        "reason": "TV 2대 중 30만 판독. 나머지 ID 31 여부 확인 필요"
+      },
+      {
+        "location": "혈액병원",
+        "reason": "엑셀 2행, 사진 수량 1 및 ID 37 하나. 추가 설치 여부 미확정"
+      },
+      {
+        "location": "소화기센터",
+        "reason": "엑셀 3행, 사진 ID 40/41만 판독. 나머지 단말 ID 미확정"
+      }
+    ],
+    "excluded": [
+      {
+        "status": "not-installed",
+        "reason": "감마나이프센터 X = 미설치, 사용자 확인"
+      }
+    ]
+  },
+  "isPublishedSnapshot": true
 }

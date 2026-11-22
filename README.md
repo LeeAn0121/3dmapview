@@ -86,6 +86,17 @@ npm run build
 
 `local-data/`는 Git에서 제외되고 개발 서버에서만 제공됩니다. `dist/` 빌드 결과에 병원의 내부 IP와 사진을 넣지 않습니다.
 
+공개 사이트는 `public/catalog/published-mapping.json`의 ID·건물·층·설치 장소·세부 위치를 기본으로 보여줍니다. 방문자가 엑셀이나 현장 JSON을 가져올 필요가 없습니다. 번호 미확정과 수량 검토 상태도 유지합니다. 내부 IP·스위치·포트·사진·원본 엑셀 행과 전체 대조 기록은 공개 파일에서 제외합니다.
+
+검토한 로컬 현장 파일에서 공개 목록을 갱신한 뒤 배포합니다.
+
+```sh
+node scripts/publish-map-data.mjs local-data/reconciliation/사진ID-재매핑-현장.json
+npm run deploy:pages
+```
+
+빈 공개 데모 또는 수정하지 않은 공개 목록은 새 버전으로 갱신됩니다. 직접 수정한 현장과 가져온 내부 자료는 브라우저에 보존합니다. 방문자가 수정한 내용은 해당 브라우저에만 저장되며 공개 원본을 변경하지 않습니다. 공개 안내도 재생성 시에도 공개 매핑 목록을 다시 적용합니다.
+
 사진에 적힌 ID는 엑셀 행 번호와 별도로 `referenceId`에 보관합니다. 목록·검색·상세 화면에서 `07` 또는 `ID 07`로 찾을 수 있습니다. 판독 중인 번호는 `referenceStatus: "review"`, 개별 IP를 구분하지 못한 장소는 `networkStatus: "review"`로 표시합니다.
 
 검토한 ID 목록으로 로컬 대조표와 이미지 포함 현장 JSON을 만들 수 있습니다. 입력은 `entries: [["07", ["원본 단말 ID"], "세부 위치", "사진 번호", "confirmed"]]`, `excluded`, `unresolved` 배열을 담은 JSON입니다. 동일 장소의 여러 원본 ID를 넣으면 IP를 행 순서로 배정하지 않습니다. 미설치·수량 차이와 원본 기록은 대조 자료로 보존합니다.

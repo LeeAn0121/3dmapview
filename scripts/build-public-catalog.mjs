@@ -5,6 +5,7 @@ import crypto from 'node:crypto';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { spacesFromTsv } from '../src/lib/imageAnalysis.js';
+import { applyPublicMapping } from '../src/lib/publication.js';
 const exec=promisify(execFile),root='public/catalog';await fs.mkdir(`${root}/maps`,{recursive:true});
 const api=`${root}/official-places.json`;
 await exec('curl',['--fail','-L','-sS','--max-time','30','https://www.cmcseoul.or.kr/api/hospitalguide/lookaround?dataType=front','-o',api]);
@@ -33,5 +34,7 @@ for(const plan of labels){
  spaces.push(...spacesFromTsv([header,...rows].join('\n'),{floor,width:plan.width,height:plan.height}).map(s=>({...s,recognitionEngine:'source-plan-labels',sourceUrl:floor.sourceUrl})));
 }
 const devices=[]; // Public rooms are never represented as installed terminals.
-await fs.writeFile(`${root}/site.json`,JSON.stringify({version:1,matchingVersion:2,id:'seoul-st-mary',name:'서울성모병원',buildings,floors,spaces,devices,matchingRules:[],isPublicDemo:true,sources:[{name:'서울성모병원 병원둘러보기',url:'https://www.cmcseoul.or.kr/page/hospitalguide/lookaround'}],warnings:['현재 표시하는 안내도에서 읽은 장소만 포함합니다. 세부실이 없는 안내도는 상세 이미지를 등록해 주세요.']},null,2));
+let site={version:1,matchingVersion:2,id:'seoul-st-mary',name:'서울성모병원',buildings,floors,spaces,devices,matchingRules:[],isPublicDemo:true,sources:[{name:'서울성모병원 병원둘러보기',url:'https://www.cmcseoul.or.kr/page/hospitalguide/lookaround'}],warnings:['현재 표시하는 안내도에서 읽은 장소만 포함합니다. 세부실이 없는 안내도는 상세 이미지를 등록해 주세요.']};
+try{site=applyPublicMapping(site,JSON.parse(await fs.readFile(`${root}/published-mapping.json`,'utf8')))}catch(error){if(error.code!=='ENOENT')throw error;}
+await fs.writeFile(`${root}/site.json`,JSON.stringify(site,null,2));
 console.log(JSON.stringify({sourceBoundPlans:floors.length,imageLabels:spaces.length,foreignImageCoordinates:0,hospitalSpecificAliases:0}));
